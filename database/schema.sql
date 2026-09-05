@@ -1,0 +1,33 @@
+-- Your database schema: the tables your project is built on.
+--
+-- This file is the source of truth. Edit it, then run:
+--
+--     php database/build.php
+--
+-- ...which rebuilds the database file from scratch. Don't design your tables
+-- in a GUI and hope this file keeps up -- it won't, and the two will drift
+-- apart silently.
+--
+-- Keeping the schema here as text means it can be diffed, reviewed, and read
+-- by a human, which a .db file cannot.
+--
+-- A worked example, to delete once you have tables of your own. Note the
+-- foreign key: the framework turns foreign key enforcement on, which SQLite
+-- does not do by default.
+
+-- CREATE TABLE artists (
+--     id      INTEGER PRIMARY KEY AUTOINCREMENT,
+--     name    TEXT NOT NULL,
+--     formed  INTEGER
+-- );
+--
+-- CREATE TABLE albums (
+--     id          INTEGER PRIMARY KEY AUTOINCREMENT,
+--     artist_id   INTEGER NOT NULL,
+--     title       TEXT NOT NULL,
+--     released    INTEGER,
+--
+--     FOREIGN KEY (artist_id) REFERENCES artists(id)
+-- );
+--
+-- CREATE INDEX idx_albums_artist ON albums(artist_id);

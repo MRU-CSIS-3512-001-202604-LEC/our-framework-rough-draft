@@ -1,0 +1,23 @@
+-- Starting data for your database.
+--
+-- Runs straight after schema.sql when you run:
+--
+--     php database/build.php
+--
+-- This file is optional -- delete it if you'd rather load your data some
+-- other way, and build.php will simply skip it.
+--
+-- Two reasons to keep your data here rather than typing it into a GUI:
+-- everyone working on the project gets exactly the same rows, and you can
+-- get back to a known-good state after you've wrecked something.
+--
+-- Matching example for the tables in schema.sql. Delete it along with those.
+
+-- INSERT INTO artists (name, formed) VALUES
+--     ('Talk Talk', 1981),
+--     ('Cocteau Twins', 1979);
+--
+-- INSERT INTO albums (artist_id, title, released) VALUES
+--     (1, 'Spirit of Eden', 1988),
+--     (1, 'Laughing Stock', 1991),
+--     (2, 'Heaven or Las Vegas', 1990);
